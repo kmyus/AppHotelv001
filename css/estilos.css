@@ -1,7 +1,8 @@
 #inicio .ui-content, 
 #registro .ui-content, 
 #main .ui-content,
-#reservar .ui-content {
+#reservar .ui-content,
+#historial .ui-content {
 	text-align: center;
 }
 
@@ -19,5 +20,29 @@
 }
 
 .menu-btn {
-	padding: 17px;
+	padding: 15px;
+}
+
+.tablaHistorial {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.tablaHistorial th,
+.tablaHistorial td {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.tablaHistorial tbody tr:nth-child(2n+1) {
+	background-color: #CCC;
+}
+
+.tablaHistorial th {
+	background-color: blue;
+	color: dark gray;
+}
+
+#privacidad h2 {
+	text-align: center;
 }
