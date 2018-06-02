@@ -1,9 +1,23 @@
-#inicio .ui-content, #registro .ui-content {
+#inicio .ui-content, 
+#registro .ui-content, 
+#main .ui-content,
+#reservar .ui-content {
 	text-align: center;
 }
+
 #inicio img {
 	margin-bottom: 20px;
 }
-#inicio button, #registro button {
+
+#inicio button, 
+#registro button {
 	margin: 20px 0;
+}
+
+#main img {
+	margin-top: 70px;
+}
+
+.menu-btn {
+	padding: 17px;
 }

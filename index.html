@@ -19,7 +19,7 @@
 			<img src="img/logoHotel.png">
 			<input type="text" name="email" id="email" placeholder="Correo">
 			<input type="password" name="password" id="password" placeholder="Contraseña">
-			<button class="ui-btn ui-btn-active">Iniciar sesión</button>
+			<a href="#main" class="ui-btn ui-btn-active">Iniciar sesión</a>
 			<a href="#registro">¿Aún no tienes cuenta?</a>
 		</div>
 		<div data-role="footer" data-position="fixed">
@@ -39,6 +39,66 @@
 			<input type="password" name="password2" id="password2" placeholder="Confirmar contraseña">
 			<button class="ui-btn ui-btn-active">Registrar</button>
 			<a href="#inicio">¿Ya tienes cuenta?</a>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			
+		</div>
+	</div>
+
+	<div id="main" data-role="page">
+		<div data-role="header">
+			<div data-role="control-group" data-type="horizontal">
+				<a href="#menu" data-icon="bars" data-role="button" class="menu-btn"></a>
+			</div>
+		</div>
+		<div data-role="main" class="ui-content">
+			<img src="img/logoHotel.png">
+			<p>Bienvenido Lex</p>
+			<a href="#reservar" class="ui-btn ui-btn-active">¡Reserva Ya!</a>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			
+		</div>
+		<!--data-display: overlay reveal push-->
+		<div id="menu" data-role="panel" data-display="overlay">
+			<h3>Menú</h3>
+			<ul data-role="listview">
+				<li>Inicio</li>
+				<li><a href="#reservar">Reservar</a></li>
+				<li>Historial</li>
+				<li>Galería</li>
+				<li>Privacidad</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="reservar" data-role="page">
+		<div data-role="header">
+				<a href="#main" data-icon="back" data-role="button" class="menu-btn"></a>
+				<h1>Datos Reservación</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<input type="text" name="name" id="name" placeholder="Nombre">
+			<select name="tipoHabitacion" id="tipoHabitacion" data-placeholder="true" data-native-menu="false">
+				<option value="">Tipo habitación</option>
+				<option value="1">Individual</option>
+				<option value="2">Matrimonial</option>
+				<option value="3">Suite Jr</option>
+				<option value="4">Suite VIP</option>
+			</select>
+			<select name="personas" id="personas" data-placeholder="true" data-native-menu="false">
+				<option value="">Personas</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+			<input type="date" name="fechaInicio" id="fechaInicio">
+			<input type="date" name="fechaFin" id="fechaFin">
+			<label>
+        		<input type="checkbox" name="checkbox-0 ">Acepto los Términos
+    		</label>
+			<button class="ui-btn ui-btn-active">Reservar</button>
 		</div>
 		<div data-role="footer" data-position="fixed">
 			
