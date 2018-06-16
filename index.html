@@ -7,19 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
-	<script type="text/javascript" src="phonegap.js"></script>
-	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-
 	<div id="inicio" data-role="page">
 		<div data-role="header">
 			
 		</div>
 		<div data-role="main" class="ui-content">
 			<img src="img/logoHotel.png">
-			<input type="text" name="email" id="email" placeholder="Correo">
-			<input type="password" name="password" id="password" placeholder="Contraseña">
-			<a href="#main" class="ui-btn ui-btn-active">Iniciar sesión</a>
+			<input type="text" name="email" id="email-inicio" placeholder="Correo">
+			<input type="password" name="password" id="password-inicio" placeholder="Contraseña">
+			<a id="btn-inicio-sesion" class="ui-btn ui-btn-active">Iniciar sesión</a>
 			<a href="#registro">¿Aún no tienes cuenta?</a>
 		</div>
 		<div data-role="footer" data-position="fixed">
@@ -153,22 +149,87 @@
 			<h1>Galería</h1>
 		</div>
 		<div data-role="main" class="ui-content">
-			<div class="ui-grid-b">
-				<div class="ui-block-a"><img src="img/hotel01.jpg"></div>
-			    <div class="ui-block-b"><img src="img/hotel02.jpg"></div>
-			    <div class="ui-block-c"><img src="img/hotel03.jpg"></div>
-			    <div class="ui-block-a"><img src="img/hotel04.jpg"></div>
-			    <div class="ui-block-b"><img src="img/hotel05.jpg"></div>
-			    <div class="ui-block-c"><img src="img/hotel06.jpg"></div>
-			    <div class="ui-block-a"><img src="img/hotel07.jpg"></div>
-			    <div class="ui-block-b"><img src="img/hotel08.jpg"></div>
-			    <div class="ui-block-c"><img src="img/hotel09.jpg"></div>
+			<div id="galeriaInicial" class="ui-grid-b">
+				<div class="ui-block-a">
+					<a href="#galeriaPopup1" data-rel="popup" data-position-to="window" data-transition="fade">
+					<img src="img/hotel01.jpg"></a>
+				</div>
+			    <div class="ui-block-b">
+			    	<a href="#galeriaPopup2" data-rel="popup" data-position-to="window" data-transition="fade">
+			    	<img src="img/hotel02.jpg">
+			    </div>
+			    <div class="ui-block-c">
+			    	<a href="#galeriaPopup3" data-rel="popup" data-position-to="window" data-transition="fade">
+			    	<img src="img/hotel03.jpg">
+			    </div>
+			    <div class="ui-block-a">
+			    	<a href="#galeriaPopup4" data-rel="popup" data-position-to="window" data-transition="fade">
+			    	<img src="img/hotel04.jpg">
+			    </div>
+			    <div class="ui-block-b">
+			    	<a href="#galeriaPopup5" data-rel="popup" data-position-to="window" data-transition="fade">
+			    	<img src="img/hotel05.jpg">
+			    </div>
+			    <div class="ui-block-c">
+			    	<a href="#galeriaPopup6" data-rel="popup" data-position-to="window" data-transition="fade">
+			    	<img src="img/hotel06.jpg">
+			    </div>
+			    <div class="ui-block-a">
+			    	<a href="#galeriaPopup7" data-rel="popup" data-position-to="window" data-transition="fade">
+			    	<img src="img/hotel07.jpg">
+			    </div>
+			    <div class="ui-block-b">
+			    	<a href="#galeriaPopup8" data-rel="popup" data-position-to="window" data-transition="fade">
+			    	<img src="img/hotel08.jpg">
+			    </div>
+			    <div class="ui-block-c">
+			    	<a href="#galeriaPopup9" data-rel="popup" data-position-to="window" data-transition="fade">
+			    	<img src="img/hotel09.jpg">
+			    </div>
+			</div>
+			<div id="galeriaPopup1" data-role="popup" data-overlay-theme="b" data-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img src="img/hotel01.jpg" class="popphoto">
+			</div>
+			<div id="galeriaPopup2" data-role="popup" data-overlay-theme="b" data-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img src="img/hotel02.jpg" class="popphoto">
+			</div>
+			<div id="galeriaPopup3" data-role="popup" data-overlay-theme="b" data-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img src="img/hotel03.jpg" class="popphoto">
+			</div>
+			<div id="galeriaPopup4" data-role="popup" data-overlay-theme="b" data-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img src="img/hotel04.jpg" class="popphoto">
+			</div>
+			<div id="galeriaPopup5" data-role="popup" data-overlay-theme="b" data-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img src="img/hotel05.jpg" class="popphoto">
+			</div>
+			<div id="galeriaPopup6" data-role="popup" data-overlay-theme="b" data-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img src="img/hotel06.jpg" class="popphoto">
+			</div>
+			<div id="galeriaPopup7" data-role="popup" data-overlay-theme="b" data-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img src="img/hotel07.jpg" class="popphoto">
+			</div>
+			<div id="galeriaPopup8" data-role="popup" data-overlay-theme="b" data-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img src="img/hotel08.jpg" class="popphoto">
+			</div>
+			<div id="galeriaPopup9" data-role="popup" data-overlay-theme="b" data-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img src="img/hotel09.jpg" class="popphoto">
 			</div>
 		</div>
 		<div data-role="footer" data-position="fixed">
 			
 		</div>
 	</div>
+
+	
 
 	<div id="privacidad" data-role="page">
 		<div data-role="header">
@@ -179,14 +240,27 @@
 		</div>
 		<div data-role="main" class="ui-content">
 			<h2>Aviso de Privacidad</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 		<div data-role="footer" data-position="fixed">
 			
 		</div>
 	</div>
 
+	<script type="text/javascript" src="phonegap.js"></script>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

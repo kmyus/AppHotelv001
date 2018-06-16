@@ -43,6 +43,22 @@
 	color: dark gray;
 }
 
+#galeria #galeriaInicial {
+	text-align: center;	
+}
+
+#galeria #galeriaInicial img {
+	width: 75%;
+}
+
+#galeria .popphoto {
+	width: 100%;
+}
+
+#galeria div [id^=galeriaPopup] {
+	width: 250px;
+}
+
 #privacidad h2 {
 	text-align: center;
 }
